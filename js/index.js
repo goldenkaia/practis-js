@@ -671,3 +671,45 @@ const userObj = users.reduce((acc, element) => {
   return acc;
 }, {});
 console.log(userObj);*/
+
+//5 Треба обчислити суму грошей усіх рахунків.
+
+/*const bankAccounts = [
+  { id: "123", amount: 19 },
+  { id: "345", amount: 33 },
+  { id: "567", amount: 4 },
+  { id: "789", amount: 20 },
+];
+
+const total = bankAccounts.reduce((acc, element) => {
+  return acc + element.amount;
+}, 0);
+console.log(total);*/
+
+/*6 Перетвори объект в масив ключів та значень за допомогою
+reduce [[name, 'John'],[age, 21], [hobby, "skydiving"], [premium, true]]
+
+const user = {
+  name: "John",
+  age: 21,
+  hobby: "skydiving",
+  premium: true,
+};
+
+const keys = Object.keys(user);
+
+const array = keys.reduce((acc, key) => {
+  acc.push([key, user[key]]);
+  return acc;
+}, []);
+console.log(array);
+
+//console.log(keys);
+
+//console.log(Object.entries(user));*/
+
+/*const newObj = array.reduce((acc, [key, value]) => {
+  acc[key] = value;
+  return acc;
+}, {});
+console.log(newObj);*/
