@@ -652,3 +652,22 @@ console.log(min);
 
 const max = numbers.reduce((acc, element) => (element > acc ? element : acc));
 console.log(max);*/
+
+//3 Знаходимо суму елементів: (36)
+/*const nums = [1, 2, 3, 4, 5, 6, 7, 8];
+
+const total = nums.reduce((acc, element) => acc + element, 0);
+console.log(total);*/
+
+//4 Створюємо новий об'єкт з ID та ім'ям користувача: // { '1': 'John', '2': 'Anna', '3': 'Kate' }
+/*const users = [
+  { id: "1", name: "John" },
+  { id: "2", name: "Anna" },
+  { id: "3", name: "Kate" },
+];
+
+const userObj = users.reduce((acc, element) => {
+  acc[element.id] = element.name;
+  return acc;
+}, {});
+console.log(userObj);*/
