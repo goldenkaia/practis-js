@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script src="./js/index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .square,
+      .item {
+        width: 150px;
+        height: 150px;
+        background: red;
+        margin: 10px;
+      }
+      .item,
+      .square.green {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="leftSwapInput" type="text" value="???" data-index="123" />
+    <!-- <div class="wrapper">
+      <p class="item"></p>
+      <p class="item"></p>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>-->
+    <!--<input type="text" id="js-input1" value="!!!!!!!!!!!!" />
+  <input type="text" id="js-input2" value="????????????" />
+  <button type="button" class="btn">Змінити</button>-->
+    <!---<button class="add-btn">add</button>
+    <div class="container"></div>-->
+    <script src="./js/dom.js"></script>
+  </body>
 </html>
