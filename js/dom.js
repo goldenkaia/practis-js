@@ -111,3 +111,105 @@ function onClick(evt) {
 const id = inputEl.dataset.index;
 //const value = inputEl.getAttribute("value");
 console.log(id);*/
+
+//Виводимо червоний квадрат, при наведенні на нього він стає зеленим, а коли відводимо
+//курсор від нього, назад червоним.
+//mouseover/mouseout
+{
+  /* <div class="square"></div> */
+}
+
+/*const squareEl = document.querySelector(".square");
+squareEl.addEventListener("mouseover", onMouseover);
+squareEl.addEventListener("mouseout", onMouseout);
+function onMouseover(evt) {
+  this.style.background = "green";
+  //evt.target.style.background = "green"
+}
+function onMouseout(evt) {
+ // this.style.background = "red";
+}*/
+
+/*
+Натискання на кнопку "SHOW ME" має виводити значення з поля введення в alert
+
+   <div>
+        <button id="alertButton">SHOW ME</button>
+        <input id="alertInput" type="text" value="Hello world!" />
+   </div>
+*/
+
+/*const btnEl = document.querySelector("#alertButton");
+const inputEl = document.querySelector("#alertInput");
+btnEl.addEventListener("click", onClick);
+function onClick() {
+  const value = inputEl.value.trim();
+  // if (value === "") return
+  if (!value) return;
+  alert(value);
+}*/
+/*
+
+Кнопка "Приховати" ховає текст і замінює назву кнопки на
+"Розкрити", при повторному натисканні текст знову стає доступним
+і кнопка набуває початкового вигляду.
+
+<div>
+        <input id="passwordInput" type="password">
+        <button id="passwordButton">Розкрити</button>
+    </div>
+
+*/
+
+/*const inputEl = document.querySelector("#passwordInput");
+const btnEl = document.querySelector("#passwordButton");
+btnEl.addEventListener("click", onClick);
+function onClick() {
+  btnEl.textContent =
+    btnEl.textContent === "Приховати" ? "Розкрити" : "Приховати";
+  inputEl.type = inputEl.type === "password" ? "text" : "password";
+}*/
+
+/*
+Кнопка "Зменшити" робить квадрат менше на 10 пікселів, кнопка "Збільшити" - більше на 10 пікселів.
+
+<style>
+#box {
+    width: 30px;
+    height: 30px;
+    background: red;
+}
+</style>
+
+    <div>
+        <div id="box"></div>
+        <button id="decrease">Зменшити</button>
+        <button id="increase">Збільшити</button>
+    </div>
+*/
+
+/*const btnInEl = document.querySelector("#increase");
+const btnDecEl = document.querySelector("#decrease");
+const squareEl = document.querySelector("#box");
+
+btnInEl.addEventListener("click", onClickInc);
+btnDecEl.addEventListener("click", onClickDec);
+
+let size = squareEl.clientWidth;
+
+function onClickInc() {
+  size += 10;
+  updateSizeEl();
+}
+
+function onClickDec() {
+  size -= 10;
+  updateSizeEl();
+}
+
+function updateSizeEl() {
+  squareEl.style.width = size + "px";
+  squareEl.style.height = size + "px";
+}
+
+console.dir(squareEl);*/
